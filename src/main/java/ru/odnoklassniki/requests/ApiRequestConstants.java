@@ -17,4 +17,9 @@ public final class ApiRequestConstants {
     public static final String SIG_PARAM = "sig";
 
     public static final String FIELDS_PARAM = "fields";
+    public static final String UIDS_PARAM = "uids";
+    public static final String MOVE_TO_TOP_PARAM = "move_to_top";
+    public static final String ANCHOR_PARAM = "anchor";
+    public static final String DIRECTION_PARAM  = "direction";
+    public static final String COUNT_PARAM = "count";
 }
