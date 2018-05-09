@@ -1,4 +1,4 @@
-package ru.odnoklassniki.tests;
+package ru.odnoklassniki.tests.examples;
 
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
@@ -6,7 +6,7 @@ import org.junit.Test;
 import ru.odnoklassniki.common.ApiException;
 import ru.odnoklassniki.base.ApiTestBase;
 import ru.odnoklassniki.common.users.UserInfoField;
-import ru.odnoklassniki.responses.users.GetCurrentUserResponse;
+import ru.odnoklassniki.responses.users.UsersGetCurrentUserResponse;
 
 import java.util.logging.Logger;
 
@@ -45,7 +45,7 @@ public class TestGetCurrentUser extends ApiTestBase {
 
         LOGGER.info("Вызовем метод в сессии пользователя");
         bindDefaultUserSession();
-        GetCurrentUserResponse getCurrentUserResponse = okApi.getUserService().getCurrentUser();
+        UsersGetCurrentUserResponse getCurrentUserResponse = okApi.getUserService().getCurrentUser();
 
         LOGGER.info("Проверим, что в ответе есть непустые имя и фамилия");
         Assert.assertTrue("Пустое имя пользователя", StringUtils.isNotBlank(getCurrentUserResponse.getFirstName()));
@@ -62,7 +62,7 @@ public class TestGetCurrentUser extends ApiTestBase {
 
         LOGGER.info("Вызовем метод в сессии пользователя");
         bindDefaultUserSession();
-        GetCurrentUserResponse getCurrentUserResponse = okApi.getUserService().getCurrentUser(new UserInfoField[]{UserInfoField.FIRST_NAME});
+        UsersGetCurrentUserResponse getCurrentUserResponse = okApi.getUserService().getCurrentUser(new UserInfoField[]{UserInfoField.FIRST_NAME});
 
         LOGGER.info("Проверим, что в ответе есть запрошенное поле");
         Assert.assertTrue("Пустое имя пользователя", StringUtils.isNotBlank(getCurrentUserResponse.getFirstName()));

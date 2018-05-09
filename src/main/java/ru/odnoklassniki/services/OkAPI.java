@@ -25,4 +25,8 @@ public class OkAPI {
     public UserService getUserService() {
         return new UserService(this.apiClient);
     }
+
+    public GroupService getGroupService() {
+        return new GroupService(this.apiClient);
+    }
 }
