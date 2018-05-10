@@ -12,6 +12,7 @@ public class UserBean {
     private Integer age;
     private String birthday;
     private String email;
+    private String locale;
     @SerializedName("first_name")
     private String firstName;
     @SerializedName("last_name")
@@ -28,6 +29,10 @@ public class UserBean {
 
     public Integer getAge() {
         return age;
+    }
+
+    public String getLocale() {
+        return locale;
     }
 
     public String getBirthday() {

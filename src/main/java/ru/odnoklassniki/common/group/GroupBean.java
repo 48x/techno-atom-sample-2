@@ -13,9 +13,15 @@ public class GroupBean {
     private String description;
     private String shortname;
     private String picAvatar;
+    private String city;
+
+
+
     @SerializedName("members_count")
     private int membersCount;
     private String status;
+
+    public String getCity() {return city;}
 
     public String getUid() {
         return uid;
