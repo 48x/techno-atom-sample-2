@@ -2,68 +2,42 @@ package ru.odnoklassniki.services;
 
 import ru.odnoklassniki.ApiClient;
 import ru.odnoklassniki.common.ApiException;
-import ru.odnoklassniki.common.group.GroupBeanFields;
-import ru.odnoklassniki.common.group.PagingDirection;
-import ru.odnoklassniki.requests.group.GetInfoRequest;
-import ru.odnoklassniki.requests.group.GetUserGroupsRequest;
-import ru.odnoklassniki.responses.group.GetInfoResponse;
-import ru.odnoklassniki.responses.group.GetUserGroupsResponse;
+import ru.odnoklassniki.common.group.GroupBean;
+import ru.odnoklassniki.common.group.GroupBeanField;
+import ru.odnoklassniki.requests.group.GroupGetInfoRequest;
+import ru.odnoklassniki.requests.group.GroupGetUserGroupsV2Request;
+import ru.odnoklassniki.responses.group.GroupGetUserGroupsV2Response;
+
 
 public class GroupService {
-
     private ApiClient apiClient;
 
-    public GroupService(ApiClient apiClient) {
+    GroupService(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
 
-    public GetInfoResponse getInfo(String[] uids, GroupBeanFields[] groupBeanFields) throws ApiException {
-        GetInfoRequest getInfoRequest = new GetInfoRequest(uids, groupBeanFields);
-        return apiClient.executeRequest(getInfoRequest, GetInfoResponse.class);
+    public GroupBean[] getGroupInfo(String[] uids, GroupBeanField[] groupBeanFields) throws ApiException {
+        GroupGetInfoRequest groupGetInfoRequest = new GroupGetInfoRequest(uids, groupBeanFields);
+        return apiClient.executeRequest(groupGetInfoRequest, GroupBean[].class);
     }
 
-    public GetInfoResponse getInfo(String[] uids, GroupBeanFields[] groupBeanFields, Boolean hasMoveToTop) throws ApiException {
-        GetInfoRequest getInfoRequest = new GetInfoRequest(uids, groupBeanFields, hasMoveToTop);
-        return apiClient.executeRequest(getInfoRequest, GetInfoResponse.class);
+    public GroupBean[] getGroupInfo(String[] uids, GroupBeanField[] groupBeanFields, Boolean moveToTop) throws ApiException {
+        GroupGetInfoRequest groupGetInfoRequest = new GroupGetInfoRequest(uids, groupBeanFields, moveToTop);
+        return apiClient.executeRequest(groupGetInfoRequest, GroupBean[].class);
     }
 
-    public GetInfoResponse getInfo() throws ApiException {
-        GetInfoRequest getInfoRequest = new GetInfoRequest();
-        return apiClient.executeRequest(getInfoRequest, GetInfoResponse.class);
+    public GroupGetUserGroupsV2Response getUserGroupsV2() throws ApiException {
+        GroupGetUserGroupsV2Request groupGetUserGroupsV2Request = new GroupGetUserGroupsV2Request();
+        return apiClient.executeRequest(groupGetUserGroupsV2Request, GroupGetUserGroupsV2Response.class);
     }
 
-    public GetInfoResponse getInfo(String[] uids) throws ApiException {
-        GetInfoRequest getInfoRequest = new GetInfoRequest(uids);
-        return apiClient.executeRequest(getInfoRequest, GetInfoResponse.class);
+    public GroupGetUserGroupsV2Response getUserGroupsV2(Integer count) throws ApiException {
+        GroupGetUserGroupsV2Request groupGetUserGroupsV2Request = new GroupGetUserGroupsV2Request(count);
+        return apiClient.executeRequest(groupGetUserGroupsV2Request, GroupGetUserGroupsV2Response.class);
     }
 
-    public GetInfoResponse getInfo(GroupBeanFields[] groupBeanFields) throws ApiException {
-        GetInfoRequest getInfoRequest = new GetInfoRequest(groupBeanFields);
-        return apiClient.executeRequest(getInfoRequest, GetInfoResponse.class);
-    }
-
-    public GetUserGroupsResponse getUserGroups() throws ApiException {
-        GetUserGroupsRequest getUserGroupsRequest = new GetUserGroupsRequest();
-        return apiClient.executeRequest(getUserGroupsRequest, GetUserGroupsResponse.class);
-    }
-
-    public GetUserGroupsResponse getUserGroups(String anchor) throws ApiException {
-        GetUserGroupsRequest getUserGroupsRequest = new GetUserGroupsRequest(anchor);
-        return apiClient.executeRequest(getUserGroupsRequest, GetUserGroupsResponse.class);
-    }
-
-    public GetUserGroupsResponse getUserGroups(PagingDirection pagingDirection) throws ApiException {
-        GetUserGroupsRequest getUserGroupsRequest = new GetUserGroupsRequest(pagingDirection);
-        return apiClient.executeRequest(getUserGroupsRequest, GetUserGroupsResponse.class);
-    }
-
-    public GetUserGroupsResponse getUserGroups(Integer count) throws ApiException {
-        GetUserGroupsRequest getUserGroupsRequest = new GetUserGroupsRequest(count);
-        return apiClient.executeRequest(getUserGroupsRequest, GetUserGroupsResponse.class);
-    }
-
-    public GetUserGroupsResponse getUserGroups(String anchor, PagingDirection pagingDirection, Integer count) throws ApiException {
-        GetUserGroupsRequest getUserGroupsRequest = new GetUserGroupsRequest(anchor, pagingDirection, count);
-        return apiClient.executeRequest(getUserGroupsRequest, GetUserGroupsResponse.class);
+    public GroupGetUserGroupsV2Response getUserGroupsV2(String uid) throws ApiException {
+        GroupGetUserGroupsV2Request getUserGroupsV2Request = new GroupGetUserGroupsV2Request(uid);
+        return apiClient.executeRequest(getUserGroupsV2Request, GroupGetUserGroupsV2Response.class);
     }
 }

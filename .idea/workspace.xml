@@ -2,22 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c74d3725-0dcd-442c-861c-65935b7641c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/GroupBeanFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/PagingDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GetInfoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GetUserGroupsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GetInfoResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GetUserGroupsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/GroupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetUserGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/GroupBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/GroupUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/UserBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/UserGroupBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GroupGetInfoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GroupGetUserGroupsV2Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/users/UsersGetInfoByRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GroupGetUserGroupsV2Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/users/UsersGetInfoByResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/group/TestGetInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/group/TestGetUserGroupsV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/users/TestGetInfoBy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/examples/TestGroupGetInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/examples/TestGroupGetUserGroupsV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/examples/TestUsersGetInfoBy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/ApiClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/ApiMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/ApiMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/Group.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/GroupBeanFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/GroupBeanField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/PagingDirection.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/ApiRequestConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/ApiRequestConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/OkAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/OkAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GetInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GetUserGroupsRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/users/GetCurrentUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/users/UsersGetCurrentUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GetInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GetUserGroupsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/users/GetCurrentUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/users/UsersGetCurrentUserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/GroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetCurrentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/examples/TestGetCurrentUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetUserGroups.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/ApiClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/ApiClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/common/ApiMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/common/ApiMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/common/group/Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/common/group/GroupBeanFields.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/common/group/PagingDirection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/requests/ApiRequestConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/requests/ApiRequestConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/requests/group/GetInfoRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/requests/group/GetUserGroupsRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/requests/users/GetCurrentUserRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/responses/group/GetInfoResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/responses/group/GetUserGroupsResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/responses/users/GetCurrentUserResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/services/GroupService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/services/GroupService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/odnoklassniki/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/odnoklassniki/tests/TestGetCurrentUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/odnoklassniki/tests/TestGetInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/odnoklassniki/tests/TestGetUserGroups.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +64,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestGetUserGroups.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetUserGroups.java">
+      <file leaf-file-name="project.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/project.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="119">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestGetInfoBy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/users/TestGetInfoBy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="143" column="68" lean-forward="true" selection-start-line="143" selection-start-column="68" selection-end-line="143" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,45 +85,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApiClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/ApiClient.java">
+      <file leaf-file-name="TestUsersGetInfoBy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/examples/TestUsersGetInfoBy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="128" column="99" selection-start-line="128" selection-start-column="99" selection-end-line="128" selection-end-column="99" />
+            <state relative-caret-position="391">
+              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetUserGroupsResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GetUserGroupsResponse.java">
+      <file leaf-file-name="TestGetInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/group/TestGetInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#324#325#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestGetInfo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+            <state relative-caret-position="151">
+              <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="123" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestGetCurrentUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetCurrentUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -106,17 +128,23 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/OkAPI.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetCurrentUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/PagingDirection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/ApiMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/Group.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GetUserGroupsRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/ApiRequestConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GetUserGroupsResponse.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetUserGroups.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/Group.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/GroupService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GetInfoRequest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/ApiClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/ApiMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/ApiRequestConstants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/examples/TestGroupGetInfo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/TestGetInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GroupGetUserGroupsV2Request.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/TestGetUserGroupsV2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/GroupService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/group/TestGetUserGroupsV2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/users/TestGetInfoBy.java" />
       </list>
     </option>
   </component>
@@ -125,6 +153,16 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="235" />
@@ -138,8 +176,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,26 +254,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="odnoklassniki" type="462c0819:PsiDirectoryNode" />
-              <item name="responses" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techno-atom-sample-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techno-atom-sample-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="odnoklassniki" type="462c0819:PsiDirectoryNode" />
-              <item name="responses" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techno-atom-sample-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techno-atom-sample-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="odnoklassniki" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -267,7 +284,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="odnoklassniki" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="techno-atom-sample-2" type="b2602c69:ProjectViewProjectNode" />
@@ -276,7 +293,27 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="odnoklassniki" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techno-atom-sample-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techno-atom-sample-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="odnoklassniki" type="462c0819:PsiDirectoryNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techno-atom-sample-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techno-atom-sample-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="odnoklassniki" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="techno-atom-sample-2" type="b2602c69:ProjectViewProjectNode" />
@@ -289,7 +326,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,23 +350,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestGetInfo.testMethodThrowsExceptionInvokingWithoutUidsParam">
+  <component name="RunManager" selected="JUnit.TestGetInfoBy.testMethodOnInvalidUid">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="TestGetInfo.testFieldsParam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetInfoBy.testMethodOnInvalidUid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="techno-atom-sample-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.odnoklassniki.tests.*" />
+          <option name="PATTERN" value="ru.odnoklassniki.homework.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.odnoklassniki.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.odnoklassniki.tests.TestGetInfo" />
-      <option name="METHOD_NAME" value="testFieldsParam" />
+      <option name="PACKAGE_NAME" value="ru.odnoklassniki.homework.users" />
+      <option name="MAIN_CLASS_NAME" value="ru.odnoklassniki.homework.users.TestGetInfoBy" />
+      <option name="METHOD_NAME" value="testMethodOnInvalidUid" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -339,19 +377,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestGetInfo.testMethodThrowsExceptionInvokingWithoutFieldsParam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetInfoBy.testMethodThrowsExceptionWhenSessionIsNotSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="techno-atom-sample-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.odnoklassniki.tests.*" />
+          <option name="PATTERN" value="ru.odnoklassniki.homework.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.odnoklassniki.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.odnoklassniki.tests.TestGetInfo" />
-      <option name="METHOD_NAME" value="testMethodThrowsExceptionInvokingWithoutFieldsParam" />
+      <option name="PACKAGE_NAME" value="ru.odnoklassniki.homework.users" />
+      <option name="MAIN_CLASS_NAME" value="ru.odnoklassniki.homework.users.TestGetInfoBy" />
+      <option name="METHOD_NAME" value="testMethodThrowsExceptionWhenSessionIsNotSet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -362,19 +400,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestGetInfo.testMethodThrowsExceptionInvokingWithoutUidsParam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetInfoBy.testParamFieldsIsRequired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="techno-atom-sample-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.odnoklassniki.tests.*" />
+          <option name="PATTERN" value="ru.odnoklassniki.homework.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.odnoklassniki.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.odnoklassniki.tests.TestGetInfo" />
-      <option name="METHOD_NAME" value="testMethodThrowsExceptionInvokingWithoutUidsParam" />
+      <option name="PACKAGE_NAME" value="ru.odnoklassniki.homework.users" />
+      <option name="MAIN_CLASS_NAME" value="ru.odnoklassniki.homework.users.TestGetInfoBy" />
+      <option name="METHOD_NAME" value="testParamFieldsIsRequired" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -385,20 +423,20 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestGetUserGroups" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetInfoBy.testParamUidIsRequired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="techno-atom-sample-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.odnoklassniki.tests.*" />
+          <option name="PATTERN" value="ru.odnoklassniki.homework.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.odnoklassniki.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.odnoklassniki.tests.TestGetUserGroups" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="ru.odnoklassniki.homework.users" />
+      <option name="MAIN_CLASS_NAME" value="ru.odnoklassniki.homework.users.TestGetInfoBy" />
+      <option name="METHOD_NAME" value="testParamUidIsRequired" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -408,19 +446,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestGetUserGroups.testAnchorAndAroundDirectionAndCountParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetUserGroupsV2.testMethodOnInvalidParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="techno-atom-sample-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.odnoklassniki.tests.*" />
+          <option name="PATTERN" value="ru.odnoklassniki.homework.group.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.odnoklassniki.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.odnoklassniki.tests.TestGetUserGroups" />
-      <option name="METHOD_NAME" value="testAnchorAndAroundDirectionAndCountParams" />
+      <option name="PACKAGE_NAME" value="ru.odnoklassniki.homework.group" />
+      <option name="MAIN_CLASS_NAME" value="ru.odnoklassniki.homework.group.TestGetUserGroupsV2" />
+      <option name="METHOD_NAME" value="testMethodOnInvalidParams" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -470,19 +508,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestGetUserGroups" />
-      <item itemvalue="JUnit.TestGetInfo.testFieldsParam" />
-      <item itemvalue="JUnit.TestGetUserGroups.testAnchorAndAroundDirectionAndCountParams" />
-      <item itemvalue="JUnit.TestGetInfo.testMethodThrowsExceptionInvokingWithoutFieldsParam" />
-      <item itemvalue="JUnit.TestGetInfo.testMethodThrowsExceptionInvokingWithoutUidsParam" />
+      <item itemvalue="JUnit.TestGetUserGroupsV2.testMethodOnInvalidParams" />
+      <item itemvalue="JUnit.TestGetInfoBy.testMethodThrowsExceptionWhenSessionIsNotSet" />
+      <item itemvalue="JUnit.TestGetInfoBy.testParamUidIsRequired" />
+      <item itemvalue="JUnit.TestGetInfoBy.testParamFieldsIsRequired" />
+      <item itemvalue="JUnit.TestGetInfoBy.testMethodOnInvalidUid" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestGetInfo.testMethodThrowsExceptionInvokingWithoutUidsParam" />
-        <item itemvalue="JUnit.TestGetInfo.testFieldsParam" />
-        <item itemvalue="JUnit.TestGetInfo.testMethodThrowsExceptionInvokingWithoutFieldsParam" />
-        <item itemvalue="JUnit.TestGetUserGroups.testAnchorAndAroundDirectionAndCountParams" />
-        <item itemvalue="JUnit.TestGetUserGroups" />
+        <item itemvalue="JUnit.TestGetInfoBy.testMethodOnInvalidUid" />
+        <item itemvalue="JUnit.TestGetInfoBy.testParamFieldsIsRequired" />
+        <item itemvalue="JUnit.TestGetInfoBy.testParamUidIsRequired" />
+        <item itemvalue="JUnit.TestGetInfoBy.testMethodThrowsExceptionWhenSessionIsNotSet" />
+        <item itemvalue="JUnit.TestGetUserGroupsV2.testMethodOnInvalidParams" />
       </list>
     </recent_temporary>
   </component>
@@ -498,51 +536,53 @@
       <updated>1525623022483</updated>
       <workItem from="1525623047768" duration="20882000" />
       <workItem from="1525705715085" duration="6588000" />
+      <workItem from="1525976586847" duration="6603000" />
+      <workItem from="1526040535707" duration="6832000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGetUserGroups_testAnchorAndAroundDirectionAndCountParams - 2018.05.07 at 19h 29m 55s.xml">
-      <configuration name="TestGetUserGroups.testAnchorAndAroundDirectionAndCountParams" configurationId="JUnit" />
+    <history-entry file="TestGetUserGroupsV2_TestUidParam - 2018.05.11 at 15h 51m 49s.xml">
+      <configuration name="TestGetUserGroupsV2.TestUidParam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGetUserGroups_testAnchorAndAroundDirectionAndCountParams - 2018.05.07 at 19h 33m 50s.xml">
-      <configuration name="TestGetUserGroups.testAnchorAndAroundDirectionAndCountParams" configurationId="JUnit" />
+    <history-entry file="TestGetUserGroupsV2_testGroupsAreReturnedByDefault - 2018.05.11 at 15h 56m 12s.xml">
+      <configuration name="TestGetUserGroupsV2.testGroupsAreReturnedByDefault" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGetUserGroups_testAnchorAndAroundDirectionAndCountParams - 2018.05.07 at 19h 40m 37s.xml">
-      <configuration name="TestGetUserGroups.testAnchorAndAroundDirectionAndCountParams" configurationId="JUnit" />
+    <history-entry file="TestGetUserGroupsV2_testGroupsAreReturnedByDefault - 2018.05.11 at 15h 57m 35s.xml">
+      <configuration name="TestGetUserGroupsV2.testGroupsAreReturnedByDefault" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGetUserGroups_testAnchorAndAroundDirectionAndCountParams - 2018.05.07 at 19h 42m 19s.xml">
-      <configuration name="TestGetUserGroups.testAnchorAndAroundDirectionAndCountParams" configurationId="JUnit" />
+    <history-entry file="TestGetUserGroupsV2_TestUidParam - 2018.05.11 at 15h 57m 47s.xml">
+      <configuration name="TestGetUserGroupsV2.TestUidParam" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGetUserGroups_testAnchorAndAroundDirectionAndCountParams - 2018.05.07 at 19h 54m 53s.xml">
-      <configuration name="TestGetUserGroups.testAnchorAndAroundDirectionAndCountParams" configurationId="JUnit" />
+    <history-entry file="TestGetUserGroupsV2_testMethodOnInvalidParams - 2018.05.11 at 16h 27m 19s.xml">
+      <configuration name="TestGetUserGroupsV2.testMethodOnInvalidParams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGetInfo_testFieldsParam - 2018.05.07 at 20h 18m 44s.xml">
-      <configuration name="TestGetInfo.testFieldsParam" configurationId="JUnit" />
+    <history-entry file="TestGetUserGroupsV2_testMethodOnInvalidParams - 2018.05.11 at 16h 27m 58s.xml">
+      <configuration name="TestGetUserGroupsV2.testMethodOnInvalidParams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGetInfo_testMethodThrowsExceptionInvokingWithoutFieldsParam - 2018.05.07 at 20h 22m 49s.xml">
-      <configuration name="TestGetInfo.testMethodThrowsExceptionInvokingWithoutFieldsParam" configurationId="JUnit" />
+    <history-entry file="TestGetUserGroupsV2_testMethodOnInvalidParams - 2018.05.11 at 16h 34m 52s.xml">
+      <configuration name="TestGetUserGroupsV2.testMethodOnInvalidParams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGetInfo_testFieldsParam - 2018.05.07 at 20h 22m 59s.xml">
-      <configuration name="TestGetInfo.testFieldsParam" configurationId="JUnit" />
+    <history-entry file="TestGetInfoBy_testMethodThrowsExceptionWhenSessionIsNotSet - 2018.05.11 at 16h 38m 49s.xml">
+      <configuration name="TestGetInfoBy.testMethodThrowsExceptionWhenSessionIsNotSet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGetInfo_testFieldsParam - 2018.05.07 at 20h 24m 06s.xml">
-      <configuration name="TestGetInfo.testFieldsParam" configurationId="JUnit" />
+    <history-entry file="TestGetInfoBy_testParamUidIsRequired - 2018.05.11 at 16h 52m 58s.xml">
+      <configuration name="TestGetInfoBy.testParamUidIsRequired" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGetInfo_testMethodThrowsExceptionInvokingWithoutUidsParam - 2018.05.07 at 20h 24m 39s.xml">
-      <configuration name="TestGetInfo.testMethodThrowsExceptionInvokingWithoutUidsParam" configurationId="JUnit" />
+    <history-entry file="TestGetInfoBy_testParamFieldsIsRequired - 2018.05.11 at 16h 55m 46s.xml">
+      <configuration name="TestGetInfoBy.testParamFieldsIsRequired" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27470000" />
+    <option name="totallyTimeSpent" value="40905000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32954547" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32905984" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -550,12 +590,12 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32954547" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32905984" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -570,6 +610,37 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32905984" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32905984" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914772" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -578,30 +649,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetUserGroups.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="96" selection-start-line="61" selection-start-column="96" selection-end-line="61" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetCurrentUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar!/org/apache/http/NameValuePair.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetCurrentUser.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar!/org/apache/http/NameValuePair.class" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/base/OkApiProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -609,31 +658,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar!/org/apache/commons/lang3/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar!/org/apache/commons/lang3/StringUtils.class" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/base/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/users/UserInfoField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -644,6 +673,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/base/UserSessionConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/users/GetCurrentUserRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/GroupBeanFields.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/PagingDirection.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/Group.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GetUserGroupsRequest.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/users/GetCurrentUserResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetCurrentUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/base/ApiTestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/Group.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GetInfoRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GetUserGroupsResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetUserGroups.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/ApiException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/ApiMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/users/UsersGetCurrentUserRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/ApiRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GetInfoResponse.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/ApiResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -658,112 +752,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/base/UserSessionConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/ApiException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GroupGetInfoRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/ApiClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        <state relative-caret-position="476">
+          <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/users/GetCurrentUserRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/GroupBeanField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        <state relative-caret-position="21">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/GroupBeanFields.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/GroupBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/PagingDirection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/GroupUserRole.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/ApiMethod.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/UserGroupBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/Group.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GetUserGroupsRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/examples/TestGroupGetInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/ApiRequestConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        <state relative-caret-position="408">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GetInfoResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GroupGetUserGroupsV2Request.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/users/GetCurrentUserResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetCurrentUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="20" column="107" selection-start-line="20" selection-start-column="107" selection-end-line="20" selection-end-column="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/OkAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="374">
+          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
             <element signature="e#512#513#0" expanded="true" />
             <element signature="e#566#567#0" expanded="true" />
@@ -773,40 +835,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/base/ApiTestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/examples/TestGroupGetUserGroupsV2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="340">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/Group.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GroupGetUserGroupsV2Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="221">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding>
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/ApiRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/examples/TestGetCurrentUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="101" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/requests/group/GetInfoRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/group/TestGetUserGroupsV2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="-983">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -815,46 +872,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/services/GroupService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        <state relative-caret-position="567">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/ApiClient.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/project.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="128" column="99" selection-start-line="128" selection-start-column="99" selection-end-line="128" selection-end-column="99" />
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/group/GetUserGroupsResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/users/UserInfoField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-79">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetUserGroups.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/common/group/UserBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/odnoklassniki/responses/users/UsersGetInfoByResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/group/TestGetInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="123" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/TestGetInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/tests/examples/TestUsersGetInfoBy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        <state relative-caret-position="391">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/odnoklassniki/homework/users/TestGetInfoBy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="143" column="68" lean-forward="true" selection-start-line="143" selection-start-column="68" selection-end-line="143" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

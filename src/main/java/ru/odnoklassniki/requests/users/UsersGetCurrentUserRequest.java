@@ -11,13 +11,13 @@ import ru.odnoklassniki.requests.ApiRequestConstants;
  * Запрос на выполнение метода users.getCurrentUser
  * Документация: https://apiok.ru/dev/methods/rest/users/users.getCurrentUser
  */
-public class GetCurrentUserRequest extends ApiRequest {
+public class UsersGetCurrentUserRequest extends ApiRequest {
 
-    public GetCurrentUserRequest() {
+    public UsersGetCurrentUserRequest() {
         this.setApiMethod(ApiMethod.USERS_GET_CURRENT_USER);
     }
 
-    public GetCurrentUserRequest(UserInfoField[] userInfoFields) {
+    public UsersGetCurrentUserRequest(UserInfoField[] userInfoFields) {
         this.setApiMethod(ApiMethod.USERS_GET_CURRENT_USER).addParam(ApiRequestConstants.FIELDS_PARAM, userInfoFields);
     }
 }

@@ -1,6 +1,9 @@
 package ru.odnoklassniki.common.group;
 
-public enum GroupBeanFields {
+/**
+ * Created by Maksim Egorichev on 5/7/18 at 11:17 AM
+ */
+public enum GroupBeanField {
     ABBREVIATION,
     ACCESS_TYPE,
     ADDRESS,
@@ -79,5 +82,6 @@ public enum GroupBeanFields {
     UID,
     VIDEO_TAB_HIDDEN,
     YEAR_FROM,
-    YEAR_TO;
+    YEAR_TO,
+    ;
 }

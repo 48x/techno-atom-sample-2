@@ -17,8 +17,6 @@ import ru.odnoklassniki.common.ApiErrorInfo;
 import ru.odnoklassniki.common.ApiException;
 import ru.odnoklassniki.requests.ApiRequest;
 import ru.odnoklassniki.requests.ApiRequestConstants;
-import ru.odnoklassniki.responses.ApiResponse;
-import ru.odnoklassniki.responses.group.GetUserGroupsResponse;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -80,7 +78,7 @@ public class ApiClient {
      * @param responseClass     класс ответа на выполнение запроса
      * @return
      */
-    public <R extends ApiRequest, T extends ApiResponse> T executeRequest(R apiRequest, Class<T> responseClass) throws ApiException {
+    public <R extends ApiRequest, T> T executeRequest(R apiRequest, Class<T> responseClass) throws ApiException {
         final String rawResponse = getRawResponse(apiRequest);
         return convertResponse(rawResponse,responseClass);
     }
@@ -126,7 +124,7 @@ public class ApiClient {
         return validateResponse(httpResponse);
     }
 
-    private <T extends ApiResponse> T convertResponse(String rawResponse, Class<T> responseClass) {
+    private <T> T convertResponse(String rawResponse, Class<T> responseClass) {
         return GSON.fromJson(rawResponse, responseClass);
     }
 

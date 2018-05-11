@@ -8,7 +8,7 @@ import ru.odnoklassniki.responses.ApiResponse;
  *
  * Результат выполнения метода users.getCurrentUser
  */
-public class GetCurrentUserResponse extends ApiResponse {
+public class UsersGetCurrentUserResponse extends ApiResponse {
     private Integer age;
     private String birthday;
     private String email;
