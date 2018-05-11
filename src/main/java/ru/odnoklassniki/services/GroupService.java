@@ -8,9 +8,7 @@ import ru.odnoklassniki.requests.group.GroupGetInfoRequest;
 import ru.odnoklassniki.requests.group.GroupGetUserGroupsV2Request;
 import ru.odnoklassniki.responses.group.GroupGetUserGroupsV2Response;
 
-/**
- * Created by Maksim Egorichev on 5/7/18 at 11:23 AM
- */
+
 public class GroupService {
     private ApiClient apiClient;
 
@@ -36,5 +34,10 @@ public class GroupService {
     public GroupGetUserGroupsV2Response getUserGroupsV2(Integer count) throws ApiException {
         GroupGetUserGroupsV2Request groupGetUserGroupsV2Request = new GroupGetUserGroupsV2Request(count);
         return apiClient.executeRequest(groupGetUserGroupsV2Request, GroupGetUserGroupsV2Response.class);
+    }
+
+    public GroupGetUserGroupsV2Response getUserGroupsV2(String uid) throws ApiException {
+        GroupGetUserGroupsV2Request getUserGroupsV2Request = new GroupGetUserGroupsV2Request(uid);
+        return apiClient.executeRequest(getUserGroupsV2Request, GroupGetUserGroupsV2Response.class);
     }
 }

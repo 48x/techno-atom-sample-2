@@ -8,7 +8,6 @@ package ru.odnoklassniki.common;
 public enum ApiMethod {
     USERS_GET_CURRENT_USER("users", "getCurrentUser"),
     USERS_GET_INFO_BY("users", "getInfoBy"),
-
     GROUP_GET_INFO("group", "getInfo"),
     GROUP_GET_USER_GROUPS_V2("group", "getUserGroupsV2"),
     ;

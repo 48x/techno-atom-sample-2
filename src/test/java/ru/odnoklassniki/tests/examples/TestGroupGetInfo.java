@@ -48,5 +48,7 @@ public class TestGroupGetInfo extends ApiTestBase {
         GroupBean groupBean = groupBeans[0];
         Assert.assertEquals("Неверный id группы", GROUP_ID, groupBean.getUid());
         Assert.assertEquals("Неверное название группы", GROUP_NAME, groupBean.getName());
+
+
     }
 }

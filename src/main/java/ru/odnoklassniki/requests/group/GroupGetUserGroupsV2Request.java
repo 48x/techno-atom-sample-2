@@ -16,4 +16,8 @@ public class GroupGetUserGroupsV2Request extends ApiRequest {
     public GroupGetUserGroupsV2Request(Integer count) {
         this.setApiMethod(ApiMethod.GROUP_GET_USER_GROUPS_V2).addParam(ApiRequestConstants.COUNT_PARAM, count);
     }
+
+    public GroupGetUserGroupsV2Request(String uid) {
+        this.setApiMethod(ApiMethod.GROUP_GET_USER_GROUPS_V2).addParam(ApiRequestConstants.UID_PARAM, uid);
+    }
 }

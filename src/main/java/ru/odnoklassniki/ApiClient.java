@@ -17,7 +17,6 @@ import ru.odnoklassniki.common.ApiErrorInfo;
 import ru.odnoklassniki.common.ApiException;
 import ru.odnoklassniki.requests.ApiRequest;
 import ru.odnoklassniki.requests.ApiRequestConstants;
-import ru.odnoklassniki.responses.ApiResponse;
 
 import java.io.IOException;
 import java.util.Arrays;
