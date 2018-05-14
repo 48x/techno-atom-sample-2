@@ -27,7 +27,7 @@ public class TestGroupGetInfo extends ApiTestBase {
 
     /**
      * Пример теста на метод group.getInfo
-     */
+
     @Test
     public void testGroupGetInfoExample() throws ApiException {
         LOGGER.info("Получим данные об одной группе с помощью метода group.getInfo");
@@ -48,5 +48,21 @@ public class TestGroupGetInfo extends ApiTestBase {
         GroupBean groupBean = groupBeans[0];
         Assert.assertEquals("Неверный id группы", GROUP_ID, groupBean.getUid());
         Assert.assertEquals("Неверное название группы", GROUP_NAME, groupBean.getName());
-    }
+    }*/
+
+    @Test
+    public void testGroupGetInfoMy() throws ApiException {
+                LOGGER.info("Получим данные об одной группе с помощью метода group.getInfo");
+               bindDefaultUserSession();
+
+                        GroupBean[] groupBeans = okApi.getGroupService().getGroupInfo(new String[]{GROUP_ID}, FIELDS);
+
+                       GroupBean groupBean = groupBeans[0];
+                       Assert.assertNotNull("Нет участников",  groupBean.getMembersCount());
+                       Assert.assertEquals("Невернок описание","ВСЁ ДЛЯ ХОРОШЕГО НАСТРОЕНИЯ", groupBean.getDescription());
+                       Assert.assertNotEquals("Несовпадение",groupBean.getName(),groupBean.getShortname());
+                       Assert.assertEquals("Неверный id группы", GROUP_ID, groupBean.getUid());
+                       Assert.assertFalse("Нет описания", groupBean.getDescription().isEmpty());
+            }
 }
+
