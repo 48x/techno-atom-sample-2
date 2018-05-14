@@ -21,7 +21,7 @@ public class TestUsersGetInfoBy extends ApiTestBase {
 
     /**
      * Пример теста на метод users.getInfoBy
-     */
+
     @Test
     public void testUsersGetInfoByExample() throws ApiException {
         LOGGER.info("Получим данные о другом пользователе с помощью метода users.getInfoBy");
@@ -34,5 +34,21 @@ public class TestUsersGetInfoBy extends ApiTestBase {
         Assert.assertNotNull("Не получили информацию о пользователе", userBean);
         Assert.assertEquals("Неверный ID пользователя", USER_ID, userBean.getUid());
         Assert.assertEquals("Неверное имя пользователя", USER_NAME, userBean.getName());
+    }*/
+    @Test
+    public void testUsersGetInfoByMe() throws ApiException {
+            LOGGER.info("Получим данные о другом пользователе с помощью метода users.getInfoBy");
+            bindDefaultUserSession();
+
+            UsersGetInfoByResponse getInfoByResponse = okApi.getUserService().getInfoBy(USER_ID, FIELDS);
+
+            LOGGER.info("Проверим, что получили верные данные");
+
+            UserBean userBean = getInfoByResponse.getUser();
+            Assert.assertNotNull(userBean);
+            Assert.assertFalse("Не получили информацию об имени", userBean.getName().isEmpty());
+            Assert.assertEquals("Неверный имя пользователя", "Юрий Дудь", userBean.getName());
+            Assert.assertNotNull("Не получили информацию о e-mail", userBean.getEmail());
+            Assert.assertTrue("Старше 18 лет", userBean.getAge()>=18);
     }
 }
