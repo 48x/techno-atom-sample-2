@@ -68,7 +68,7 @@ public class TestGetCurrentUser extends ApiTestBase {
         Assert.assertTrue("Пустое имя пользователя", StringUtils.isNotBlank(getCurrentUserResponse.getFirstName()));
 
         LOGGER.info("Проверим, что в ответе нет незапрошенного поля");
-        Assert.assertNull("Пустая фамилия пользователя", getCurrentUserResponse.getLastName());
+        Assert.assertNull("Не пустая фамилия пользователя", getCurrentUserResponse.getLastName());
         LOGGER.info("Учитывается параметр fields и в ответе возвращаются только запрошенные поля");
     }
 }
