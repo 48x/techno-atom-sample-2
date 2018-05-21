@@ -68,9 +68,9 @@ public class TestGroupGetInfo extends ApiTestBase {
         Assert.assertTrue("Пустое имя", StringUtils.isNotBlank(groupBean.getName()));
 
         LOGGER.info("Проверим, что ненужных полей нет");
-        Assert.assertNull("Непустой description",groupBean.getDescription());
-        Assert.assertNull("Непустой shortname",groupBean.getShortname());
-        Assert.assertNull("Непустой status",groupBean.getStatus());
+        Assert.assertNull("Непустой description", groupBean.getDescription());
+        Assert.assertNull("Непустой shortname", groupBean.getShortname());
+        Assert.assertNull("Непустой status", groupBean.getStatus());
 
     }
 
@@ -80,7 +80,7 @@ public class TestGroupGetInfo extends ApiTestBase {
 
         try {
             LOGGER.info("Вызовем метод без сессии");
-            okApi.getGroupService().getGroupInfo(new String[]{GROUP_ID},FIELDS);
+            okApi.getGroupService().getGroupInfo(new String[]{GROUP_ID}, FIELDS);
             Assert.fail("Метод не кинул ошибку при отсутствии пользовательской сессии");
         } catch (ApiException e) {
             LOGGER.info("Получили ошибку, проверим её текст");
@@ -95,7 +95,7 @@ public class TestGroupGetInfo extends ApiTestBase {
 
         try {
             LOGGER.info("Вызовем метод с невалидным id");
-            okApi.getGroupService().getGroupInfo(new String[]{INVALID_GROUP_ID},FIELDS);
+            okApi.getGroupService().getGroupInfo(new String[]{INVALID_GROUP_ID}, FIELDS);
             Assert.fail("Метод не кинул ошибку с невалидным id");
         } catch (ApiException e) {
             LOGGER.info("Получили ошибку, проверим её текст");
@@ -110,7 +110,7 @@ public class TestGroupGetInfo extends ApiTestBase {
 
         try {
             LOGGER.info("Вызовем метод без id");
-            okApi.getGroupService().getGroupInfo(new String[]{},FIELDS);
+            okApi.getGroupService().getGroupInfo(new String[]{}, FIELDS);
             Assert.fail("Метод не кинул ошибку при отсутствии id");
         } catch (ApiException e) {
             LOGGER.info("Получили ошибку, проверим её текст");
@@ -126,7 +126,7 @@ public class TestGroupGetInfo extends ApiTestBase {
 
         try {
             LOGGER.info("Вызовем метод без списка полей");
-            okApi.getGroupService().getGroupInfo(new String[]{GROUP_ID},null);
+            okApi.getGroupService().getGroupInfo(new String[]{GROUP_ID}, null);
             Assert.fail("Метод не кинул ошибку при отсутствии списка полей");
         } catch (ApiException e) {
             LOGGER.info("Получили ошибку, проверим её текст");

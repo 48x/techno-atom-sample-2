@@ -58,10 +58,10 @@ public class TestUsersGetInfoBy extends ApiTestBase {
 
         LOGGER.info("Проверим, что не получили ненужных полей");
         Assert.assertEquals("Пустой age", userBean.getAge().intValue(),0);
-        Assert.assertNull("Непустой birthday",userBean.getBirthday());
-        Assert.assertNull("Непустой email",userBean.getEmail());
-        Assert.assertNull("Непустой firstName",userBean.getFirstName());
-        Assert.assertNull("Непустой lastName",userBean.getLastName());
+        Assert.assertNull("Непустой birthday", userBean.getBirthday());
+        Assert.assertNull("Непустой email", userBean.getEmail());
+        Assert.assertNull("Непустой firstName", userBean.getFirstName());
+        Assert.assertNull("Непустой lastName", userBean.getLastName());
     }
 
     @Test
@@ -71,7 +71,7 @@ public class TestUsersGetInfoBy extends ApiTestBase {
 
         try {
             LOGGER.info("Вызовем метод с невалидным id");
-            okApi.getUserService().getInfoBy(INVALID_USER_ID,FIELDS);
+            okApi.getUserService().getInfoBy(INVALID_USER_ID, FIELDS);
             Assert.fail("Метод не кинул ошибку с невалидным id");
         } catch (ApiException e) {
             LOGGER.info("Получили ошибку, проверим её текст");
@@ -85,7 +85,7 @@ public class TestUsersGetInfoBy extends ApiTestBase {
 
         try {
             LOGGER.info("Вызовем метод без сессии");
-            okApi.getUserService().getInfoBy(USER_ID,FIELDS);
+            okApi.getUserService().getInfoBy(USER_ID, FIELDS);
             Assert.fail("Метод не кинул ошибку при отсутствии пользовательской сессии");
         } catch (ApiException e) {
             LOGGER.info("Получили ошибку, проверим её текст");
@@ -100,7 +100,7 @@ public class TestUsersGetInfoBy extends ApiTestBase {
 
         try {
             LOGGER.info("Вызовем метод без id");
-            okApi.getUserService().getInfoBy(null,FIELDS);
+            okApi.getUserService().getInfoBy(null, FIELDS);
             Assert.fail("Метод не кинул ошибку без id");
         } catch (ApiException e) {
             LOGGER.info("Получили ошибку, проверим её текст");
@@ -115,7 +115,7 @@ public class TestUsersGetInfoBy extends ApiTestBase {
 
         try {
             LOGGER.info("Вызовем метод без fields");
-            okApi.getUserService().getInfoBy(INVALID_USER_ID,null);
+            okApi.getUserService().getInfoBy(INVALID_USER_ID, null);
             Assert.fail("Метод не кинул ошибку без fields");
         } catch (ApiException e) {
             LOGGER.info("Получили ошибку, проверим её текст");

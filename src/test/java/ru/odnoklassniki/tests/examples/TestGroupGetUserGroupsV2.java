@@ -10,6 +10,7 @@ import ru.odnoklassniki.common.group.UserGroupBean;
 
 import java.util.logging.Logger;
 import java.util.List;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Created by Maksim Egorichev on 5/9/18 at 4:39 PM
@@ -35,7 +36,7 @@ public class  TestGroupGetUserGroupsV2 extends ApiTestBase {
         Assert.assertFalse("Пустой список групп", CollectionUtils.isEmpty(groupGetUserGroupsV2Response.getGroups()));
 
         LOGGER.info("Проверим, что в ответе есть anchor");
-        Assert.assertFalse("Получили пустой anchor", groupGetUserGroupsV2Response.getAnchor().isEmpty());
+        Assert.assertFalse("Получили пустой anchor", StringUtils.isNotBlank(groupGetUserGroupsV2Response.getAnchor()));
 
     }
 
